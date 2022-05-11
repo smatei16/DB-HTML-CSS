@@ -23,6 +23,12 @@
     font-size: 11px;
     text-transform: uppercase;
     color: var(--black);
+    text-align: center;
+}
+
+.menu-item-link {
+    text-decoration: none;
+    color: var(--black);
 }
 
 .add-button-container {
@@ -45,5 +51,230 @@
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
 }
 
+.article-title-container {
+    display: flex;
+    justify-content: center;
+}
+
+.article-title {
+    width: 780px;
+    text-align: center;
+    color: var(--black);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 46px;
+    line-height: 57px;
+}
+
+.article-about {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.article-about-item {
+    color: var(--grey);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    display: block;
+}
+
+.article-about-item:not(:first-child):before {
+    content: "•";
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.article-author {
+    color: var(--black);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.edit-delete-container {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.edit-delete-item {
+    display: block;
+}
+
+.edit-delete-button {
+    color: var(--black);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    display: block;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* .edit-delete-button:after {
+    content: '|';   
+    margin-left: 10px;
+}
+
+.edit-delete-last:after {
+    content: '';
+    margin-left: 0px;
+    margin-right: 0px;
+} */
+
+.article-image {
+    height: 720px;
+}
+
+.article-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+
+.article-text {
+    width: 780px;
+    color: var(--black);
+    font-family: 'Cardo', serif;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.article-text-container:last-child {
+    margin-bottom: 0;
+}
+
+.bottom-menu {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+    margin-bottom: 100px;
+}
+
+.bottom-menu-item {
+    color: var(--black);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 34px;
+    line-height: 42px;
+    text-decoration: none;
+}
+
+.modal-button {
+    width: 300px;
+    height: 60px;
+    background-color: white;
+    border: 1px;
+    border-color: var(--grey);
+    border-style: solid;
+    border-radius: 50px;
+    color: var(--black);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+}
+
+.modal-button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.modal-container {
+    display: flex;
+    position: fixed;
+    left: 0px;
+    top: 20px;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.modal-content {
+    width: 1000px;
+    height: 750px;
+    background-color: white;
+    border: 1px;
+    border-style: solid;
+    border-color: var(--grey);
+    box-shadow: 0 0 26px 6px;
+}
+
+.modal-input-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+
+.modal-title {
+    width: 780px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--black);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 46px;
+    line-height: 57px;
+}
+
+.modal-input {
+    width: 400px;
+    height: 35px;
+    border: 1px;
+    border-style: solid;
+    border-color: var(--grey);
+    border-radius: 5px;
+    margin-bottom: 25px;
+    font-family: 'Cardo', sans;
+    font-size: 18px;
+    line-height: 25px;
+    text-indent: 10px;
+}
+
+.modal-input-last {
+    width: 100%;
+}
+
+.modal-text {
+    width: 850px;
+    height: 100px;
+    border: 1px;
+    border-style: solid;
+    border-color: var(--grey);
+    border-radius: 5px;
+    margin-bottom: 25px;
+    font-family: 'Cardo', sans;
+    font-size: 18px;
+    line-height: 25px;
+    text-indent: 10px;
+}
+
+.modal-button-container {
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+.modal-button-save {
+    background-color: #FFE3E3;
+}
+
+.active {
+    visibility: visible;
+}
