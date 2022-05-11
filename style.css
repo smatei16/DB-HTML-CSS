@@ -1,0 +1,49 @@
+:root {
+    --black: #1E1E1E;
+    --grey: #9B9B9B;
+
+}
+
+.menu {
+    width: 1280px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 100px;
+}
+
+.menu-list {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu-item {
+    margin-right: 100px;
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.add-button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 130px;
+    margin-bottom: 90px;
+}
+
+.add-button {
+    width: 300px;
+    height: 60px;
+    background-color: white;
+    border: 1px;
+    border-color: var(--grey);
+    border-style: solid;
+    border-radius: 50px;
+    color: var(--black);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
